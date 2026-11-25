@@ -1,5 +1,5 @@
 import { join } from 'node:path';
-import { z } from '@cairul/plugin-kit';
+import { z } from '@cairul/pdk';
 import {
   list,
   locations,
@@ -11,8 +11,8 @@ import {
   requireExclusive,
   selectors,
   value,
-} from '@cairul/plugin-kit/runner';
-import { junit } from '@cairul/plugin-kit/reports';
+} from '@cairul/pdk/runner';
+import { junit } from '@cairul/pdk/reports';
 
 export default {
   settings: { implementation: z.enum(['js', 'jvm', 'ruby']).default('js') },
